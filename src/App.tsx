@@ -9,6 +9,7 @@ import Settings from "@/pages/Settings";
 import AboutHelp from "@/pages/AboutHelp";
 import Login from "@/pages/Login";
 import PrivacyTerms from "@/pages/PrivacyTerms";
+import PublicChat from "@/pages/PublicChat";
 import NotFound from "@/pages/NotFound";
 import ServerError from "@/pages/ServerError";
 
@@ -36,6 +37,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/chat/:agentSlug" element={<PublicChat />} />
           <Route path="/privacy-terms" element={<PrivacyTerms />} />
           <Route path="/500" element={<ServerError />} />
           <Route path="*" element={<NotFound />} />
