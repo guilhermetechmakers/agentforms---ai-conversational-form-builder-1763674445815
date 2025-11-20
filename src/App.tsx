@@ -6,6 +6,7 @@ import Dashboard from "@/pages/Dashboard";
 import AgentBuilder from "@/pages/AgentBuilder";
 import Sessions from "@/pages/Sessions";
 import Settings from "@/pages/Settings";
+import AboutHelp from "@/pages/AboutHelp";
 import Login from "@/pages/Login";
 import NotFound from "@/pages/NotFound";
 
@@ -29,6 +30,7 @@ function App() {
             <Route path="/" element={<Dashboard />} />
             <Route path="/agent-builder" element={<AgentBuilder />} />
             <Route path="/sessions" element={<Sessions />} />
+            <Route path="/help" element={<AboutHelp />} />
             <Route path="/settings" element={<Settings />} />
           </Route>
           <Route path="/login" element={<Login />} />

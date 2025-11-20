@@ -1,0 +1,12 @@
+{
+  "migration_name": "20251120120000_create_help_tables",
+  "created_at": "2025-11-20T12:00:00Z",
+  "description": "Setup schema for About & Help page content and support system",
+  "tables_created": ["help_documents", "faqs", "sample_prompts", "support_tickets"],
+  "tables_modified": [],
+  "tables_deleted": [],
+  "breaking_changes": false,
+  "rollback_sql": "DROP TABLE IF EXISTS support_tickets CASCADE; DROP TABLE IF EXISTS sample_prompts CASCADE; DROP TABLE IF EXISTS faqs CASCADE; DROP TABLE IF EXISTS help_documents CASCADE;",
+  "estimated_rows": 0,
+  "requires_downtime": false
+}

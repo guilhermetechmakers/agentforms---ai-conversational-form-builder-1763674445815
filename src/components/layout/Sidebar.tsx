@@ -10,13 +10,15 @@ import {
   ChevronLeft,
   ChevronRight,
   LogOut,
-  Plus
+  Plus,
+  CircleHelp
 } from "lucide-react";
 
 const sidebarItems = [
   { icon: LayoutDashboard, label: "Dashboard", to: "/" },
   { icon: Bot, label: "Agent Builder", to: "/agent-builder" },
   { icon: MessageSquare, label: "Sessions", to: "/sessions" },
+  { icon: CircleHelp, label: "Help & Support", to: "/help" },
   { icon: Settings, label: "Settings", to: "/settings" },
 ];
 
