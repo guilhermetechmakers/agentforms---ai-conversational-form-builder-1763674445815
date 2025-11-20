@@ -8,6 +8,7 @@ import Sessions from "@/pages/Sessions";
 import Settings from "@/pages/Settings";
 import AboutHelp from "@/pages/AboutHelp";
 import Login from "@/pages/Login";
+import PrivacyTerms from "@/pages/PrivacyTerms";
 import NotFound from "@/pages/NotFound";
 
 // Create a client
@@ -34,6 +35,7 @@ function App() {
             <Route path="/settings" element={<Settings />} />
           </Route>
           <Route path="/login" element={<Login />} />
+          <Route path="/privacy-terms" element={<PrivacyTerms />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
