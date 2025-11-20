@@ -10,6 +10,7 @@ import AboutHelp from "@/pages/AboutHelp";
 import Login from "@/pages/Login";
 import PrivacyTerms from "@/pages/PrivacyTerms";
 import NotFound from "@/pages/NotFound";
+import ServerError from "@/pages/ServerError";
 
 // Create a client
 const queryClient = new QueryClient({
@@ -36,6 +37,7 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/privacy-terms" element={<PrivacyTerms />} />
+          <Route path="/500" element={<ServerError />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
